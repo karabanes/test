@@ -25,6 +25,12 @@ try:
     option2 = browser.find_element(By.CSS_SELECTOR, "[for='robotsRule']")
     option2.click()
 
+    people_radio = browser.find_element(By.ID, "peopleRule")
+    people_checked = people_radio.get_attribute("checked")
+    print("value of people radio: ", people_checked)
+    assert people_checked is not None, "People radio is not selected by default"
+
+
 
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")

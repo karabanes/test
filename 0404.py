@@ -1,7 +1,1 @@
-dict({'a':1, 'b':}, c=3)
-{'a':1, 'b':2, 'c':3}
-
-list=[['a',1],['b',2]]
-dict(list)
-{'a':1, 'b':2}
-
+help(filter)
